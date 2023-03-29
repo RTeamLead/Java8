@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class ForEachMethod {
 	public static void main(String[] args) {
-		ArrayList<Integer> al = new ArrayList<>();
+	 ArrayList<Integer> al = new ArrayList<>();
 		al.add(1);
 		al.add(2);
 		al.add(5);
@@ -25,6 +25,6 @@ public class ForEachMethod {
 		
 		System.out.println("========= FOR EACH method===========");
 		
-		al.forEach(a -> System.out.println(a));
+		al.forEach(a -> System.out.println());
 	}
 }
