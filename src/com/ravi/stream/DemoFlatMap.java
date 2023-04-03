@@ -16,6 +16,14 @@ public class DemoFlatMap {
 		
 //		list.stream().flatMap(n -> n.stream()).filter(i -> i %2 ==0)
 //		.collect)
+		
+		
+		List<String> list2 = Arrays.asList("Ravi","Vivek","Raju","Abhi","Krishna","Shrushti");
+		List<String> list3 = Arrays.asList("John","Strive","Tom","Harray","Petter");
+		
+		List<List<String>> list4 = Arrays.asList(list2,list3);
+		
+		list4.stream().flatMap(a -> a.stream()).forEach(a -> System.out.println(a));
 	}
 
 }

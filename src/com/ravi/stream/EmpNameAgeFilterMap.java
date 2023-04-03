@@ -50,6 +50,12 @@ public class EmpNameAgeFilterMap {
 		list.stream().filter(p -> p.salary > 25000)
 		.filter(p -> p.name.startsWith("A"))
 		.forEach(i -> System.out.println(i));
+		
+		System.out.println("========== other option ===========");
+		
+		list.stream().filter(p -> p.salary > 25000  && p.name.startsWith("R"))
+		.forEach(p -> System.out.println(p));
+		
 	}
 
 }
